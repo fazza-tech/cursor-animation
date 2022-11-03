@@ -1,3 +1,37 @@
-body{
-    background-color: rgb(78, 78, 253);
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+h1{
+    color: white;
+}
+
+.one{
+    background-color: aquamarine;
+}
+.two{
+    background-color: tomato;
+}
+.three{
+    background-color: rgb(167, 83, 245);
+}
+.four{
+    background-color: rgb(31, 31, 255);
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
 }
