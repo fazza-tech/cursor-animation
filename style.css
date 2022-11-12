@@ -11,18 +11,20 @@ section{
     height: 100vh;
     
     scroll-snap-align: start;
+    z-index: -2;
 }
 
 h1{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+li{
+    color: rgb(0, 0, 0);
 }
 span{
     font-weight: 300;
 }
 
-.one{
-    background-color: rgb(6, 64, 255);
-}
+
 
 
 .container{
@@ -44,6 +46,10 @@ nav{
     justify-content: space-between;
     list-style: none;
 }
+
+.nav-links li {
+    padding: 1rem;
+}
 .nav-links,
 h1 {
     flex: 1;
@@ -58,4 +64,19 @@ h1 {
     position: absolute;
     transform: translate(-50%,-50%);
     pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background-size,transform;
+    transform-origin: 100% 100%;
+    z-index: -1;
+    
+    
+}
+
+.link-grow {
+    transform: scale(2);
+    background:black;
+}
+
+.hovered-link{
+    color: white;
 }
